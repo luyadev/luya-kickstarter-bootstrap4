@@ -1,0 +1,14 @@
+{
+    "baseFontSize": 16,
+
+    "source": {
+        "styles": ["scss/**/*.scss"]
+    },
+
+    "dest": {
+        "base": "dist",
+        "styles": "dist/css",
+        "scripts": "dist/js",
+        "images": "dist/images"
+    }
+}
