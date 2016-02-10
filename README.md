@@ -1,4 +1,4 @@
-Zephir Luya Boilerplate
+LUYA BOOTSTRAP4 BOILERPLATE
 =======================
 
 # Installation
