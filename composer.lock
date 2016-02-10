@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cd0ea1b86b2f30a00af4bb97850e8e27",
-    "content-hash": "d5cea7d4bdb714584858d06cae2a51fd",
+    "hash": "19cd4819700a94f7dc8e940bdc4b5a77",
+    "content-hash": "3ef7f95eaef35cf3e5f60cbd9bfb084a",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -443,16 +443,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.23.3",
+            "version": "v1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08"
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/ae53fc2c312fdee63773b75cb570304f85388b08",
-                "reference": "ae53fc2c312fdee63773b75cb570304f85388b08",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
                 "shasum": ""
             },
             "require": {
@@ -465,7 +465,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.23-dev"
+                    "dev-master": "1.24-dev"
                 }
             },
             "autoload": {
@@ -500,7 +500,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-11 14:02:19"
+            "time": "2016-01-25 21:22:18"
         },
         {
             "name": "yiisoft/yii2",
@@ -592,20 +592,20 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "ca8d23707ae47d20b0454e4b135c156f6da6d7be"
+                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/ca8d23707ae47d20b0454e4b135c156f6da6d7be",
-                "reference": "ca8d23707ae47d20b0454e4b135c156f6da6d7be",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/7452fd908a5023b8bb5ea1b123a174ca080de464",
+                "reference": "7452fd908a5023b8bb5ea1b123a174ca080de464",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -635,27 +635,27 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2015-03-01 06:22:44"
+            "time": "2016-02-06 00:49:24"
         },
         {
             "name": "zephir/luya",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zephir/luya.git",
-                "reference": "48f648352b1b6406342ec490223c1bc933587c87"
+                "reference": "c63aefc83da35b944e3f4249f603019eb4d04b3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zephir/luya/zipball/48f648352b1b6406342ec490223c1bc933587c87",
-                "reference": "48f648352b1b6406342ec490223c1bc933587c87",
+                "url": "https://api.github.com/repos/zephir/luya/zipball/c63aefc83da35b944e3f4249f603019eb4d04b3a",
+                "reference": "c63aefc83da35b944e3f4249f603019eb4d04b3a",
                 "shasum": ""
             },
             "require": {
                 "curl/curl": "1.3.0",
                 "php": ">=5.5.0",
                 "phpmailer/phpmailer": "5.2.14",
-                "twig/twig": "1.23.3",
+                "twig/twig": "1.24.0",
                 "yiisoft/yii2": "2.0.6"
             },
             "require-dev": {
@@ -704,27 +704,28 @@
                 "modular",
                 "php",
                 "programmatic",
-                "yii2"
+                "yii2",
+                "yii2-wrapper"
             ],
-            "time": "2016-01-13 12:27:46"
+            "time": "2016-02-09 11:35:21"
         },
         {
             "name": "zephir/luya-module-admin",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zephir/luya-module-admin.git",
-                "reference": "e519a918bdfb96232259509d44eeacb530ae8031"
+                "reference": "2ed63709c69456321a38d913883238f6b9193afd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zephir/luya-module-admin/zipball/e519a918bdfb96232259509d44eeacb530ae8031",
-                "reference": "e519a918bdfb96232259509d44eeacb530ae8031",
+                "url": "https://api.github.com/repos/zephir/luya-module-admin/zipball/2ed63709c69456321a38d913883238f6b9193afd",
+                "reference": "2ed63709c69456321a38d913883238f6b9193afd",
                 "shasum": ""
             },
             "require": {
                 "imagine/imagine": "0.6.3",
-                "zephir/luya": "1.0.0-beta4"
+                "zephir/luya": "1.0.0-beta5"
             },
             "type": "luya-module",
             "extra": {
@@ -752,29 +753,36 @@
             "homepage": "http://luya.io",
             "keywords": [
                 "admin",
+                "administration",
+                "angular",
                 "luya",
+                "manage",
                 "module",
-                "php"
+                "ngrest",
+                "panel",
+                "php",
+                "yii",
+                "yii2"
             ],
-            "time": "2016-01-13 12:27:46"
+            "time": "2016-02-09 11:35:21"
         },
         {
             "name": "zephir/luya-module-cms",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zephir/luya-module-cms.git",
-                "reference": "73e951688365dc9dd659b00f924dded4730af1f9"
+                "reference": "57aa80c796924960be6637c66da8b76a097dfd29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zephir/luya-module-cms/zipball/73e951688365dc9dd659b00f924dded4730af1f9",
-                "reference": "73e951688365dc9dd659b00f924dded4730af1f9",
+                "url": "https://api.github.com/repos/zephir/luya-module-cms/zipball/57aa80c796924960be6637c66da8b76a097dfd29",
+                "reference": "57aa80c796924960be6637c66da8b76a097dfd29",
                 "shasum": ""
             },
             "require": {
-                "zephir/luya": "1.0.0-beta4",
-                "zephir/luya-module-cmsadmin": "1.0.0-beta4"
+                "zephir/luya": "1.0.0-beta5",
+                "zephir/luya-module-cmsadmin": "1.0.0-beta5"
             },
             "type": "luya-module",
             "extra": {
@@ -802,30 +810,35 @@
             "homepage": "http://luya.io",
             "keywords": [
                 "cms",
+                "content",
+                "contentmanager",
                 "luya",
                 "module",
-                "php"
+                "php",
+                "yii",
+                "yii2",
+                "yii2-cms"
             ],
-            "time": "2016-01-13 12:27:46"
+            "time": "2016-02-09 11:35:21"
         },
         {
             "name": "zephir/luya-module-cmsadmin",
-            "version": "1.0.0-beta4",
+            "version": "1.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zephir/luya-module-cmsadmin.git",
-                "reference": "e60b623982238e63ae279f62f0c8fd77b93dbf77"
+                "reference": "7496cfb22228216f05c6aca50407057c2823f9ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zephir/luya-module-cmsadmin/zipball/e60b623982238e63ae279f62f0c8fd77b93dbf77",
-                "reference": "e60b623982238e63ae279f62f0c8fd77b93dbf77",
+                "url": "https://api.github.com/repos/zephir/luya-module-cmsadmin/zipball/7496cfb22228216f05c6aca50407057c2823f9ac",
+                "reference": "7496cfb22228216f05c6aca50407057c2823f9ac",
                 "shasum": ""
             },
             "require": {
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
-                "zephir/luya": "1.0.0-beta4",
-                "zephir/luya-module-admin": "1.0.0-beta4"
+                "zephir/luya": "1.0.0-beta5",
+                "zephir/luya-module-admin": "1.0.0-beta5"
             },
             "type": "luya-module",
             "extra": {
@@ -856,9 +869,13 @@
                 "cmsadmin",
                 "luya",
                 "module",
-                "php"
+                "php",
+                "yii",
+                "yii2",
+                "yii2-cms",
+                "yii2-cmsadmin"
             ],
-            "time": "2016-01-13 12:27:46"
+            "time": "2016-02-09 11:35:21"
         }
     ],
     "packages-dev": [],
