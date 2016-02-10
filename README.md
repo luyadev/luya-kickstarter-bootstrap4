@@ -3,7 +3,7 @@ LUYA BOOTSTRAP4 BOILERPLATE
 
 # Installation
 
-[» LUYA installation](https://luya.io/de/handbuch/install)
+`composer create-project luyadev/luya-boilerplate-bootstrap4 -s dev`
 
 # Front-End
 
