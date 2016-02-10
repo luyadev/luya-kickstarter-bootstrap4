@@ -3,7 +3,7 @@
     "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
     "type": "project",
     "license":"MIT",
-    "minimum-stability" : "beta",
+    "minimum-stability" : "dev",
     "require": {
         "zephir/luya" : "1.0.0-beta5",
         "zephir/luya-module-cms" : "1.0.0-beta5",
