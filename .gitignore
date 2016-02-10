@@ -30,3 +30,12 @@ composer.phar
 .buildpath
 .project
 .settings
+
+# Compiled dist folder
+/resources/dist
+
+# SASS
+/resources/.sass-cache
+
+# Styleguide
+/resources/styleguide

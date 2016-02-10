@@ -2,6 +2,7 @@
     "baseFontSize": 16,
 
     "source": {
+        "styleguideConfig": "scss/styleguide.lsg",
         "styles": ["scss/**/*.scss"]
     },
 

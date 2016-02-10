@@ -32,6 +32,11 @@ gulp styles (--prod)		// run "styles" task
 gulp watch (--prod)		// Watch all files and run for example "styles" task if a scss file is changed
 ```
 
+#### Plugin documentations
+
+[» Autoprefixer](https://github.com/postcss/autoprefixer)  
+[» postcss-style-guide](https://github.com/morishitter/postcss-style-guide)
+
 #### GULP Tasks
 
 | Task | Description |

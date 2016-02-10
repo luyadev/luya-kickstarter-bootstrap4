@@ -16,21 +16,72 @@
     <body>
     <?php $this->beginBody() ?>
 
+        <!-- GRID OVERLAY, remove for preview -->
+        <div class="grid-overlay grid-overlay--background" style="display: none;">
+            <div class="container"> <!-- Use .container-fluid to get a full-width underlay -->
+                <div class="row">
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                    <div class="col-xs-1"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /GRID OVERLAY -->
+
         <!-- Just some sample bootstrap contents -->
         <!-- Delete these if you start your project -->
         <div class="container">
 
             <div class="jumbotron m-t-2">
-                <h1 class="display-1">Installation erfolgreich!</h1>
-                <p class="lead">All content you see on this page is static. Just delete it in <code>main.php</code> under <code>views/layouts</code>.</p>
+                <h1 class="display-1">Installed successfully!</h1>
+                <p class="lead">All content you see on this page is static. You can delete it in <code>views/layouts/main.php</code>.</p>
                 <p class="lead">
                     <a class="btn btn-success btn-lg" href="<?= $this->publicHtml ?>/admin" role="button" target="_blank">» Admin</a>
                 </p>
             </div>
 
+            <div class="example">
+                <div class="row">
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                    <div class="col-md-1">.col-md-1</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">.col-md-8</div>
+                    <div class="col-md-4">.col-md-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4">.col-md-4</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">.col-md-6</div>
+                    <div class="col-md-6">.col-md-6</div>
+                </div>
+            </div>
+
             <div class="card-columns">
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=30&txt=PLACEHOLDER&w=500&h=150" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=80&txt=PLACEHOLDER&w=1000&h=800" alt="Card image cap">
                     <div class="card-block">
                         <h4 class="card-title">Card title that wraps to a new line</h4>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -47,7 +98,7 @@
                     </blockquote>
                 </div>
                 <div class="card">
-                    <img class="card-img-top img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=30&txt=PLACEHOLDER&w=500&h=150" alt="Card image cap">
+                    <img class="card-img-top img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=80&txt=PLACEHOLDER&w=1000&h=800" alt="Card image cap">
                     <div class="card-block">
                         <h4 class="card-title">Card title</h4>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -70,7 +121,7 @@
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 <div class="card">
-                    <img class="card-img img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=30&txt=PLACEHOLDER&w=500&h=300" alt="Card image">
+                    <img class="card-img img-fluid" src="https://placeholdit.imgix.net/~text?txtsize=80&txt=PLACEHOLDER&w=1000&h=1000" alt="Card image">
                 </div>
                 <div class="card card-block text-xs-right">
                     <blockquote class="card-blockquote">

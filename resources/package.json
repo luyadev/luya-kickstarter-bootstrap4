@@ -1,22 +1,22 @@
 {
-    "name": "luya-gulp-kickstarter",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {},
-    "author": "Marc Stampfli - Zephir Software Design AG",
-    "license": "ISC",
-    "devDependencies": {
-        "autoprefixer": "^6.3.1",
-        "cssnano": "^3.4.0",
-        "del": "^2.2.0",
-        "doiuse": "^2.2.1",
-        "gulp": "^3.9.0",
-        "gulp-if": "^2.0.0",
-        "gulp-postcss": "^6.0.1",
-        "gulp-sass": "^2.1.1",
-        "gulp-sourcemaps": "^1.6.0",
-        "postcss-pxtorem": "^3.3.1",
-        "postcss-style-guide": "^0.9.7",
-        "yargs": "^3.32.0"
-    }
+  "name": "luya-gulp-kickstarter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "author": "Marc Stampfli - Zephir Software Design AG",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^6.3.1",
+    "cssnano": "^3.4.0",
+    "del": "^2.2.0",
+    "doiuse": "^2.2.1",
+    "gulp": "^3.9.0",
+    "gulp-if": "^2.0.0",
+    "gulp-postcss": "^6.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "postcss-pxtorem": "^3.3.1",
+    "postcss-style-guide": "^0.12.1",
+    "yargs": "^3.32.0"
+  }
 }

@@ -1,0 +1,36 @@
+/*
+@styleguide
+
+# Example
+
+This class can be used to add background-color and border styles to columns
+
+```
+<div class="example">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+```
+
+*/
+
+.example {
+    margin: 50px 0;
+
+    div[class^=col-] {
+        background-color: $alert-info-bg;
+        border: 1px solid $alert-info-border;
+    }
+}
