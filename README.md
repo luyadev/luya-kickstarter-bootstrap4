@@ -22,15 +22,28 @@ To minify the project assets, use `gulp ... --prod`.
 
 #### Installation
 
-To use gulp, you have to run `npm install` in the `ressources/` folder. After the installation successfully completes, you can run `gulp`.
+To use gulp, you have to run `npm install` in the `resources/` folder. After the installation successfully completes, you can run `gulp`.
 
-**Examples** (Directory: ressources):
+**Examples** (Directory: resources):
 
 ```
-gulp (--prod)			// Run default task
-gulp styles (--prod)		// run "styles" task
-gulp watch (--prod)		// Watch all files and run for example "styles" task if a scss file is changed
+gulp (--prep, --prod)	        // Run default task
+gulp styles (--prep, --prod)    // run "styles" task
+gulp watch (--prep, --prod)     // Watch all files and run for example "styles" task if a scss file is changed
 ```
+
+#### Enviroments
+
+You can specify 3 different enviroments.
+
+**dev**:  
+The dev enviroment is the default enviroment. It'll be used to develop the website.
+
+**prep**:  
+The prep enviroment should be used to compile the styles for preproduction enviroments (preview sites).
+
+**prod**:  
+The prod enviroment should be used to compile the styles for production enviroments (live sites).
 
 #### Plugin documentations
 

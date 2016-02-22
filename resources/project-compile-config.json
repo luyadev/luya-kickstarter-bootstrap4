@@ -1,5 +1,5 @@
 {
-    "baseFontSize": 16,
+    "baseFontSize": 17,
 
     "source": {
         "styleguideConfig": "scss/styleguide.lsg",
@@ -7,9 +7,14 @@
     },
 
     "dest": {
-        "base": "dist",
-        "styles": "dist/css",
-        "scripts": "dist/js",
-        "images": "dist/images"
+        "dev": {
+            "styles": "dev/css"
+        },
+        "prep": {
+            "styles": "prep/css"
+        },
+        "prod": {
+            "styles": "prod/css"
+        }
     }
 }

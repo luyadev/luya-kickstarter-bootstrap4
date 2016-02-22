@@ -10,6 +10,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var gulpIf = require('gulp-if');
 var postcss = require('gulp-postcss');
+var livereload = require('gulp-livereload');
 
 // Postcss plugins
 var autoprefixer = require('autoprefixer');
@@ -23,13 +24,19 @@ var del = require('del');
 
 // Enviroment
 var argv = require('yargs').argv;
-var forProduction = false;
-if(argv.prod == true || argv.production == true) {
-    forProduction = true;
+var env = "dev";
+if (argv.prep == true || argv.preproduction == true) {
+    env = "prep";
+} else if (argv.prod == true || argv.production == true) {
+    env = "prod";
 }
 
+var dest = config.dest[env];
+
 gulp.task('clean', function() {
-    return del([config.dest.base]);
+    return del([
+        dest.styles
+    ]);
 });
 
 // Compile Our Sass
@@ -40,13 +47,14 @@ gulp.task('styles', function() {
     ];
 
     return gulp.src(config.source.styles)
-        .pipe( sourcemaps.init() )                              // Init of sourcemaps
-        .pipe( sass() )                                         // Compile regular scss to css
-        .pipe( postcss(processors) )                            // Process als postcss plugins
-        .pipe( gulpIf(forProduction, postcss([cssnano()])) )    // If --prod, minify css
-        .pipe( sourcemaps.write('.') )                          // Write the sourcemaps
-        .pipe( gulp.dest( config.dest.styles ) )                // Write the css
-    ;
+        .pipe( sourcemaps.init() )                                          // Init of sourcemaps
+        .pipe( sass().on('error', sass.logError) )                          // Compile regular scss to css
+        .pipe( postcss(processors) )                                        // Process als postcss plugins
+        .pipe( gulpIf(env == "prep" || env == "prod", postcss([cssnano()])) )                // If --prod, minify css
+        .pipe( sourcemaps.write('.') )                                      // Write the sourcemaps
+        .pipe( gulp.dest( dest.styles ) )    // Write CSS
+        .pipe( livereload() )
+        ;
 });
 
 // Test styles
@@ -67,7 +75,7 @@ gulp.task('test-styles', function() {
     return gulp.src('scss/*.scss')
         .pipe( sass() )                 // Compile regular scss to css
         .pipe( postcss(processors) )    // Process als postcss plugins
-    ;
+        ;
 });
 
 gulp.task('styleguide', function() {
@@ -76,10 +84,11 @@ gulp.task('styleguide', function() {
         .pipe( postcss([styleguide({
             name: "Test"
         })]) )
-    ;
+        ;
 });
 
 gulp.task('watch', function() {
+    livereload.listen();
     gulp.watch(config.source.styles, ['styles']);
 });
 
