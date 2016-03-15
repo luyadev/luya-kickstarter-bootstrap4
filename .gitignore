@@ -31,9 +31,6 @@ composer.phar
 .project
 .settings
 
-# Compiled dev folder
-/resources/dev
-
 # SASS
 /resources/.sass-cache
 

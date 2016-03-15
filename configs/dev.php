@@ -3,8 +3,8 @@
 /*
  * Enable or disable the debugging, if those values are deleted YII_DEBUG is false and YII_ENV is prod.
  */
-define('YII_ENV', 'prep');
-defined('YII_DEBUG') or define('YII_DEBUG', false);
+define('YII_ENV', 'dev');
+defined('YII_DEBUG') or define('YII_DEBUG', true);
 
 $config = [
     
@@ -36,7 +36,7 @@ $config = [
     'basePath' => dirname(__DIR__),
     
     'modules' => [
-
+        
         /*
          * If you have other administration module (like cmsadmin) then you going to need this module. The Admin module provides
          * a lot of functionalitiy like storage system etc. But the basic concept of LUYA is also that you can use LUYA without the
@@ -60,11 +60,12 @@ $config = [
             ],
             'enableCompression' => true, // compressing the cms output (removing white spaces and newlines)
         ],
-
+        
         /*
          * This is the administration module for the `cms` module.
          */
         'cmsadmin' => 'cmsadmin\Module',
+        
     ],
     'components' => [
         

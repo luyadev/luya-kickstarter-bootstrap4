@@ -622,6 +622,9 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
+  @media (min-width: 1920px) {
+    .container {
+      max-width: 1860px; } }
 
 .container-fluid {
   margin-left: auto;
@@ -641,7 +644,7 @@ pre {
     display: table;
     clear: both; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-hd-1, .col-hd-2, .col-hd-3, .col-hd-4, .col-hd-5, .col-hd-6, .col-hd-7, .col-hd-8, .col-hd-9, .col-hd-10, .col-hd-11, .col-hd-12 {
   position: relative;
   min-height: 1px;
   padding-left: 0.9375rem;
@@ -1225,6 +1228,112 @@ pre {
   .col-xl-offset-11 {
     margin-left: 91.66667%; }
   .col-xl-offset-12 {
+    margin-left: 100%; } }
+
+@media (min-width: 1920px) {
+  .col-hd-1, .col-hd-2, .col-hd-3, .col-hd-4, .col-hd-5, .col-hd-6, .col-hd-7, .col-hd-8, .col-hd-9, .col-hd-10, .col-hd-11, .col-hd-12 {
+    float: left; }
+  .col-hd-1 {
+    width: 8.33333%; }
+  .col-hd-2 {
+    width: 16.66667%; }
+  .col-hd-3 {
+    width: 25%; }
+  .col-hd-4 {
+    width: 33.33333%; }
+  .col-hd-5 {
+    width: 41.66667%; }
+  .col-hd-6 {
+    width: 50%; }
+  .col-hd-7 {
+    width: 58.33333%; }
+  .col-hd-8 {
+    width: 66.66667%; }
+  .col-hd-9 {
+    width: 75%; }
+  .col-hd-10 {
+    width: 83.33333%; }
+  .col-hd-11 {
+    width: 91.66667%; }
+  .col-hd-12 {
+    width: 100%; }
+  .col-hd-pull-0 {
+    right: auto; }
+  .col-hd-pull-1 {
+    right: 8.33333%; }
+  .col-hd-pull-2 {
+    right: 16.66667%; }
+  .col-hd-pull-3 {
+    right: 25%; }
+  .col-hd-pull-4 {
+    right: 33.33333%; }
+  .col-hd-pull-5 {
+    right: 41.66667%; }
+  .col-hd-pull-6 {
+    right: 50%; }
+  .col-hd-pull-7 {
+    right: 58.33333%; }
+  .col-hd-pull-8 {
+    right: 66.66667%; }
+  .col-hd-pull-9 {
+    right: 75%; }
+  .col-hd-pull-10 {
+    right: 83.33333%; }
+  .col-hd-pull-11 {
+    right: 91.66667%; }
+  .col-hd-pull-12 {
+    right: 100%; }
+  .col-hd-push-0 {
+    left: auto; }
+  .col-hd-push-1 {
+    left: 8.33333%; }
+  .col-hd-push-2 {
+    left: 16.66667%; }
+  .col-hd-push-3 {
+    left: 25%; }
+  .col-hd-push-4 {
+    left: 33.33333%; }
+  .col-hd-push-5 {
+    left: 41.66667%; }
+  .col-hd-push-6 {
+    left: 50%; }
+  .col-hd-push-7 {
+    left: 58.33333%; }
+  .col-hd-push-8 {
+    left: 66.66667%; }
+  .col-hd-push-9 {
+    left: 75%; }
+  .col-hd-push-10 {
+    left: 83.33333%; }
+  .col-hd-push-11 {
+    left: 91.66667%; }
+  .col-hd-push-12 {
+    left: 100%; }
+  .col-hd-offset-0 {
+    margin-left: 0%; }
+  .col-hd-offset-1 {
+    margin-left: 8.33333%; }
+  .col-hd-offset-2 {
+    margin-left: 16.66667%; }
+  .col-hd-offset-3 {
+    margin-left: 25%; }
+  .col-hd-offset-4 {
+    margin-left: 33.33333%; }
+  .col-hd-offset-5 {
+    margin-left: 41.66667%; }
+  .col-hd-offset-6 {
+    margin-left: 50%; }
+  .col-hd-offset-7 {
+    margin-left: 58.33333%; }
+  .col-hd-offset-8 {
+    margin-left: 66.66667%; }
+  .col-hd-offset-9 {
+    margin-left: 75%; }
+  .col-hd-offset-10 {
+    margin-left: 83.33333%; }
+  .col-hd-offset-11 {
+    margin-left: 91.66667%; }
+  .col-hd-offset-12 {
     margin-left: 100%; } }
 
 .table {
@@ -4184,6 +4293,14 @@ button.close {
   .pull-xl-none {
     float: none !important; } }
 
+@media (min-width: 1920px) {
+  .pull-hd-left {
+    float: left !important; }
+  .pull-hd-right {
+    float: right !important; }
+  .pull-hd-none {
+    float: none !important; } }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -4262,6 +4379,14 @@ button.close {
   .text-xl-right {
     text-align: right !important; }
   .text-xl-center {
+    text-align: center !important; } }
+
+@media (min-width: 1920px) {
+  .text-hd-left {
+    text-align: left !important; }
+  .text-hd-right {
+    text-align: right !important; }
+  .text-hd-center {
     text-align: center !important; } }
 
 .text-lowercase {
@@ -4587,7 +4712,15 @@ a.bg-danger:focus, a.bg-danger:hover {
   .hidden-xl-up {
     display: none !important; } }
 
-.hidden-xl-down {
+@media (max-width: 1919px) {
+  .hidden-xl-down {
+    display: none !important; } }
+
+@media (min-width: 1920px) {
+  .hidden-hd-up {
+    display: none !important; } }
+
+.hidden-hd-down {
   display: none !important; }
 
 .visible-print-block {
@@ -4611,5 +4744,87 @@ a.bg-danger:focus, a.bg-danger:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+/*
+@styleguide
+
+# Example
+
+This class can be used to add background-color and border styles to columns
+
+```
+<div class="example">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
+```
+
+*/
+.example {
+  margin: 50px 0; }
+  .example div[class^=col-] {
+    background-color: #d9edf7;
+    border: 1px solid #bcdff1; }
+
+/*
+@styleguide
+
+# Grid Overlay
+
+This class can be used to add borders to columns. They will also be positioned fixed and behind the content.
+If you just want to use it as is, copy & paste the following code into your main template file.
+
+**Variation:**
+Use *.grid-overlay--background* to add a transparent background color to columns.
+
+```
+<div class="grid-overlay">
+    <div class="container"> <!-- Use .container-fluid to get a full-width underlay -->
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="grid-overlay grid-overlay--background"></div>
+```
+
+*/
+.grid-overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  z-index: 100;
+  pointer-events: none; }
+  .grid-overlay div[class^=col-] {
+    border: 1px solid #0275d8;
+    height: 100vh; }
+  .grid-overlay.grid-overlay--background div[class^=col-] {
+    background-color: rgba(91, 192, 222, 0.3); }
 
 /*# sourceMappingURL=main.css.map */

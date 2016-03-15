@@ -1,8 +1,5 @@
 <?php
 
-// This will "also" be used to load the different env stylesheets (dev: gulp, prep: gulp --prep, prod: gulp --prod)1§
-defined('YII_ENV') or define('YII_ENV', 'prep');
-
 /**
  * your specific custom configurations.
  */

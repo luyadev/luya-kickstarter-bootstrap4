@@ -1,20 +1,37 @@
 {
-    "baseFontSize": 17,
+    "baseFontSize": 16,
 
     "source": {
         "styleguideConfig": "scss/styleguide.lsg",
-        "styles": ["scss/**/*.scss"]
+        "styles": ["scss/**/*.scss"],
+        "scripts": [
+            "js/libs/bootstrap-4-alpha2/util.js",
+            "js/libs/bootstrap-4-alpha2/alert.js",
+            "js/libs/bootstrap-4-alpha2/button.js",
+            "js/libs/bootstrap-4-alpha2/carousel.js",
+            "js/libs/bootstrap-4-alpha2/collapse.js",
+            "js/libs/bootstrap-4-alpha2/dropdown.js",
+            "js/libs/bootstrap-4-alpha2/modal.js",
+            "js/libs/bootstrap-4-alpha2/popover.js",
+            "js/libs/bootstrap-4-alpha2/scrollspy.js",
+            "js/libs/bootstrap-4-alpha2/tab.js",
+            "js/libs/bootstrap-4-alpha2/tooltip.js",
+            "js/*.js"
+        ]
     },
 
     "dest": {
         "dev": {
-            "styles": "dev/css"
+            "styles": "dev/css",
+            "scripts": "dev/js"
         },
         "prep": {
-            "styles": "prep/css"
+            "styles": "prep/css",
+            "scripts": "prep/js"
         },
         "prod": {
-            "styles": "prod/css"
+            "styles": "prod/css",
+            "scripts": "prod/js"
         }
     }
 }

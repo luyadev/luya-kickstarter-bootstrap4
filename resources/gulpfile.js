@@ -1,13 +1,14 @@
 // Project specific settings
-
 var config = require('./project-compile-config.json');
 
 // Include gulp
 var gulp = require('gulp');
 
 // Include gulp Plugins
-var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
+var sass = require('gulp-sass');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
 var gulpIf = require('gulp-if');
 var postcss = require('gulp-postcss');
 var livereload = require('gulp-livereload');
@@ -57,6 +58,20 @@ gulp.task('styles', function() {
         ;
 });
 
+// Compile JS
+gulp.task('scripts', function() {
+    del([dest.scripts]);
+
+    return gulp.src(config.source.scripts)
+        .pipe( sourcemaps.init() )                                          // Init of sourcemaps
+        .pipe( uglify() )                                      // Minify js
+        .pipe( concat('main.min.js') )
+        .pipe( sourcemaps.write('.') )                                      // Write the sourcemaps
+        .pipe( gulp.dest( dest.scripts ) )                                  // Write JS
+        .pipe( livereload() )
+        ;
+});
+
 // Test styles
 gulp.task('test-styles', function() {
     var processors = [
@@ -87,9 +102,11 @@ gulp.task('styleguide', function() {
         ;
 });
 
-gulp.task('watch', function() {
+gulp.task('automaticCompile', function() {
     livereload.listen();
     gulp.watch(config.source.styles, ['styles']);
+    gulp.watch(config.source.scripts, ['scripts']);
 });
 
-gulp.task('default', ['clean', 'styles', 'watch']);
+gulp.task('default', ['styles', 'scripts']);
+gulp.task('watch', ['default', 'automaticCompile']);
