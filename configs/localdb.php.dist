@@ -1,10 +1,5 @@
 <?php
 
-/*
- * Change the YII_ENV here to use another asset. (local, dev, prep, prod)
- * define('YII_ENV', 'local');
- */
-
 return [
     'components' => [
         'db' => [
