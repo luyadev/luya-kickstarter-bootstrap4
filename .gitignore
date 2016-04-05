@@ -4,6 +4,11 @@
 # PHPStorm
 .idea/
 
+# Sublime text
+*.sublime-project
+*.sublime-workspace
+.phpintel/
+
 # composer vendor dir
 /vendor
 
@@ -20,7 +25,7 @@ composer.phar
 #/public_html/storage
 
 # project config
-/configs/local.php
+/configs/database.php
 /configs/server.php
 
 /config/local.php

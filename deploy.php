@@ -3,21 +3,21 @@
 require 'vendor/luyadev/luya-deployer/luya.php';
 
 // DEV environment
-server('dev', 'luya.io', 22)
+server('dev', 'server.tld', 22)
     ->user('username')
     ->password('password')
     ->stage('dev')
     ->env('deploy_path', '/path/to/dev/project/public_html');
 
 // Preproduction environment
-server('prep', 'luya.io', 22)
+server('prep', 'server.tld', 22)
     ->user('username')
     ->password('password')
     ->stage('prep')
     ->env('deploy_path', '/path/to/prep/project/public_html');
 
 // Production environment
-server('prod', 'luya.io', 22)
+server('prod', 'server.tld', 22)
     ->user('username')
     ->password('password')
     ->stage('prod')
@@ -25,7 +25,7 @@ server('prod', 'luya.io', 22)
 
 set('repository', 'https://user:password@github.com/organisation/repository.git');
 
-// Uncomment the following code to generate a storage an database export on deploy on dev
+// Uncomment the following code to generate a storage and database export on deploy on dev
 // This will only work if you configured the exporter module. https://luya.io/en/guide/module-exporter
 
 /*

@@ -2,9 +2,10 @@
 
 /*
  * Enable or disable the debugging, if those values are deleted YII_DEBUG is false and YII_ENV is prod.
+ * The YII_ENV value will also be used to load assets based on enviroment (see assets/ResourcesAsset.php)
  */
 define('YII_ENV', 'dev');
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_DEBUG') or define('YII_DEBUG', false);
 
 $config = [
     
@@ -68,6 +69,18 @@ $config = [
         
     ],
     'components' => [
+
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
+            'username' => '',
+            'password' => '',
+            'charset' => 'utf8',
+
+            // in productive enviroments you can enable the schema caching
+            // 'enableSchemaCache' => true,
+            // 'schemaCacheDuration' => 43200,
+        ],
         
         /*
          * Add your smtp connection to the mail component to send mails (which is required for secure login), you can test your
@@ -91,7 +104,7 @@ $config = [
          * about the errors from your projects.
          */
         'errorHandler' => [
-            'transferException' => false,
+            'transferException' => true,
         ],
         
         /*
@@ -128,19 +141,3 @@ $config = [
         'cms',
     ],
 ];
-
-/**
- * if you want to use the debug and gii modules of yii, add them to your composer.json in the require section:
- * "yiisoft/yii2-gii" : "*"
- * "yiisoft/yii2-debug" : "*"
- */
-/*
-if (YII_DEBUG) {
-    $config['bootstrap'][] = 'debug';
-    $config['modules']['debug'] = 'yii\debug\Module';
-    $config['bootstrap'][] = 'gii';
-    $config['modules']['gii'] = 'yii\gii\Module';
-}
-*/
-
-return \yii\helpers\ArrayHelper::merge($config, require('local.php'));

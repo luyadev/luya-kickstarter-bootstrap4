@@ -8,7 +8,8 @@
         "luyadev/luya-module-admin" : "dev-master as 1.0.0-beta5",
         "luyadev/luya-module-cms" : "dev-master as 1.0.0-beta5",
         "luyadev/luya-module-cmsadmin" : "dev-master as 1.0.0-beta5",
-        "luyadev/luya-module-exporter" : "dev-master as 1.0.0-beta5"
+        "luyadev/luya-module-exporter" : "dev-master as 1.0.0-beta5",
+        "luyadev/luya-bootstrap4": "dev-master as 1.0.0-beta5"
     },
     "require-dev": {
         "yiisoft/yii2-debug" : "~2.0.0",
@@ -24,7 +25,7 @@
         "yii\\composer\\Installer::postCreateProject": {
 			"setPermission": [
 				{
-					"public_html/assets": "0777",
+				    "public_html/assets": "0777",
 					"public_html/storage": "0777"
 				}
 			]
