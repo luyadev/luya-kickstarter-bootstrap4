@@ -25,11 +25,8 @@ composer.phar
 #/public_html/storage
 
 # project config
-/configs/database.php
+/configs/localdb.php
 /configs/server.php
-
-/config/local.php
-/config/server.php
 
 # eclipse
 .buildpath

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * This is the base config. It doesn't hold any informations about the database and is only used for local development.
+ * Use localdb.php to configure you database.
+ */
+
 /*
  * Enable or disable the debugging, if those values are deleted YII_DEBUG is false and YII_ENV is prod.
  * The YII_ENV value will also be used to load assets based on enviroment (see assets/ResourcesAsset.php)
@@ -143,4 +148,4 @@ $config = [
 }*/
 
 
-return \yii\helpers\ArrayHelper::merge($config, require('database.php'));
+return \yii\helpers\ArrayHelper::merge($config, require('localdb.php'));

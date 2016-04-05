@@ -1,7 +1,8 @@
 <?php
 
 /**
- * A single config array containing all informations on the production env.
+ * This config should be used on production enviroment.
+ * The production enviroment is the last "step" and is visible to all.
  */
 
 /**
@@ -12,5 +13,5 @@ define('YII_ENV', 'prod');
 defined('YII_DEBUG') or define('YII_DEBUG', false);
 
 return [
-    // use the same as prep.php with prod env data.
+    // Use the dev.php config and change the configs to match your prod enviroment settings (for Example: Databse name, user and password)
 ];
