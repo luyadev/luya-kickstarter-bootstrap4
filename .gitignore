@@ -36,5 +36,5 @@ composer.phar
 # SASS
 /resources/.sass-cache
 
-# Styleguide
-/resources/styleguide
+# Compiled files
+/resources/local/
