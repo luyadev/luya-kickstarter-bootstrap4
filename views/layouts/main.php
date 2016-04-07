@@ -16,26 +16,17 @@
     <body>
     <?php $this->beginBody() ?>
 
-        <!-- GRID OVERLAY, remove for preview -->
-        <div class="grid-overlay grid-overlay--background" style="display: none;">
-            <div class="container"> <!-- Use .container-fluid to get a full-width underlay -->
-                <div class="row">
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
-                    <div class="col-xs-1"></div>
+        <? if(YII_ENV == "local"): ?>
+            <div style="display: block; position: fixed; left: 0; right: 0; top: -2px; bottom: -2px; z-index: 100; pointer-events: none;">
+                <div style="position: absolute; left: 0; right: 0; text-align: center; margin: 20px; font-size: 50px; color: #fff; z-index: 1000; text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);">
+                    <span class="hidden-sm-up">XS</span>
+                    <span class="hidden-xs-down hidden-md-up">SM</span>
+                    <span class="hidden-sm-down hidden-lg-up">MD</span>
+                    <span class="hidden-md-down hidden-xl-up">LG</span>
+                    <span class="hidden-lg-down">XL</span>
                 </div>
             </div>
-        </div>
-        <!-- /GRID OVERLAY -->
+        <? endif; ?>
 
         <!-- Just some sample bootstrap contents -->
         <!-- Delete these if you start your project -->
