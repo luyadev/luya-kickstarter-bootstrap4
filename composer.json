@@ -3,18 +3,18 @@
     "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
     "type": "project",
     "license":"MIT",
-    "minimum-stability" : "dev",
     "require": {
-        "luyadev/luya-module-admin" : "dev-master as 1.0.0-beta5",
-        "luyadev/luya-module-cms" : "dev-master as 1.0.0-beta5",
-        "luyadev/luya-module-cmsadmin" : "dev-master as 1.0.0-beta5",
-        "luyadev/luya-module-exporter" : "dev-master as 1.0.0-beta5",
-        "luyadev/luya-bootstrap4": "dev-master as 1.0.0-beta5"
+        "luyadev/luya-core" : "^1.0@dev",
+        "luyadev/luya-module-admin" : "^1.0@dev",
+        "luyadev/luya-module-cms" : "^1.0@dev",
+        "luyadev/luya-module-cmsadmin" : "^1.0@dev",
+        "luyadev/luya-module-exporter" : "^1.0@dev",
+        "luyadev/luya-bootstrap4": "^1.0@dev"
     },
     "require-dev": {
         "yiisoft/yii2-debug" : "~2.0.0",
         "yiisoft/yii2-gii" : "~2.0.0",
-        "luyadev/luya-deployer": "dev-master"
+        "luyadev/luya-deployer": "^1.0@dev"
     },
     "scripts": {
         "post-create-project-cmd": [
