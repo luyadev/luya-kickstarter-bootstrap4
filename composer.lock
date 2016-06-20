@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2668d46406a7bbc544153c1799df6ce6",
-    "content-hash": "cfce600a0989dff8c49b66ed9eed6370",
+    "hash": "3ea80b27338b18376a002ffbbdf465e0",
+    "content-hash": "389f0a6c40744ca6c6dc712e501f0ecc",
     "packages": [
         {
             "name": "bower-asset/jquery",
@@ -358,58 +358,6 @@
             "time": "2015-02-01 15:28:27"
         },
         {
-            "name": "ifsnop/mysqldump-php",
-            "version": "v2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ifsnop/mysqldump-php.git",
-                "reference": "701024dd160f15796bed8130c3bdeb26c634785a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ifsnop/mysqldump-php/zipball/701024dd160f15796bed8130c3bdeb26c634785a",
-                "reference": "701024dd160f15796bed8130c3bdeb26c634785a",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "squizlabs/php_codesniffer": "1.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Ifsnop\\": "src/Ifsnop/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Diego Torres",
-                    "homepage": "https://github.com/ifsnop",
-                    "role": "Developer"
-                }
-            ],
-            "description": "This is a php version of linux's mysqldump in terminal \"$ mysqldump -u username -p...\"",
-            "homepage": "https://github.com/ifsnop/mysqldump-php",
-            "keywords": [
-                "backup",
-                "database",
-                "dump",
-                "export",
-                "mysql",
-                "mysqldump",
-                "pdo",
-                "sqlite"
-            ],
-            "time": "2015-10-19 15:58:11"
-        },
-        {
             "name": "imagine/imagine",
             "version": "v0.5.0",
             "source": {
@@ -514,16 +462,16 @@
         },
         {
             "name": "luyadev/luya-core",
-            "version": "dev-master",
+            "version": "1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-core.git",
-                "reference": "c696f3af1d427ce507961fcb0424043691610cda"
+                "reference": "f25fb3c2e7fa16d7e501e165a419aa538b50a8b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-core/zipball/c696f3af1d427ce507961fcb0424043691610cda",
-                "reference": "c696f3af1d427ce507961fcb0424043691610cda",
+                "url": "https://api.github.com/repos/luyadev/luya-core/zipball/f25fb3c2e7fa16d7e501e165a419aa538b50a8b4",
+                "reference": "f25fb3c2e7fa16d7e501e165a419aa538b50a8b4",
                 "shasum": ""
             },
             "require": {
@@ -558,7 +506,7 @@
                     "homepage": "https://github.com/nadar"
                 }
             ],
-            "description": "LUYA Core",
+            "description": "The LUYA core classes in addition to the Yii2 Framework",
             "homepage": "http://luya.io",
             "keywords": [
                 "luya",
@@ -567,26 +515,26 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2016-06-05 13:59:19"
+            "time": "2016-06-20 07:47:29"
         },
         {
             "name": "luyadev/luya-module-admin",
-            "version": "dev-master",
+            "version": "1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-module-admin.git",
-                "reference": "392297eda7d0ac9689eb9d190dcaa7981f3a0616"
+                "reference": "58b95d237914c564a2771ee75bb646a10d2bb25f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-admin/zipball/392297eda7d0ac9689eb9d190dcaa7981f3a0616",
-                "reference": "392297eda7d0ac9689eb9d190dcaa7981f3a0616",
+                "url": "https://api.github.com/repos/luyadev/luya-module-admin/zipball/58b95d237914c564a2771ee75bb646a10d2bb25f",
+                "reference": "58b95d237914c564a2771ee75bb646a10d2bb25f",
                 "shasum": ""
             },
             "require": {
                 "cebe/markdown": "~1.0.0 | ~1.1.0",
                 "flowjs/flow-php-server": "^1.0",
-                "yiisoft/yii2-imagine": "~2.0.0"
+                "imagine/imagine": "0.5.*"
             },
             "require-dev": {
                 "luyadev/luya": "^1.0@dev",
@@ -616,7 +564,7 @@
                     "homepage": "https://github.com/nadar"
                 }
             ],
-            "description": "Yii2 LUYA Admin",
+            "description": "Administration core module for all LUYA admin modules",
             "homepage": "http://luya.io",
             "keywords": [
                 "admin",
@@ -631,20 +579,20 @@
                 "yii",
                 "yii2"
             ],
-            "time": "2016-06-07 11:04:14"
+            "time": "2016-06-17 19:57:21"
         },
         {
             "name": "luyadev/luya-module-cms",
-            "version": "dev-master",
+            "version": "1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-module-cms.git",
-                "reference": "f22fd621e496373a79d4851bc2eb93be5e7e6e2b"
+                "reference": "13721a7d079588922c4d146b572d89f55cbea0c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-cms/zipball/f22fd621e496373a79d4851bc2eb93be5e7e6e2b",
-                "reference": "f22fd621e496373a79d4851bc2eb93be5e7e6e2b",
+                "url": "https://api.github.com/repos/luyadev/luya-module-cms/zipball/13721a7d079588922c4d146b572d89f55cbea0c9",
+                "reference": "13721a7d079588922c4d146b572d89f55cbea0c9",
                 "shasum": ""
             },
             "require-dev": {
@@ -674,7 +622,7 @@
                     "homepage": "https://github.com/nadar"
                 }
             ],
-            "description": "Yii2 LUYA CMS",
+            "description": "Frontend module to display CMS content",
             "homepage": "http://luya.io",
             "keywords": [
                 "cms",
@@ -687,20 +635,20 @@
                 "yii2",
                 "yii2-cms"
             ],
-            "time": "2016-06-06 13:59:42"
+            "time": "2016-06-14 11:51:18"
         },
         {
             "name": "luyadev/luya-module-cmsadmin",
-            "version": "dev-master",
+            "version": "1.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-module-cmsadmin.git",
-                "reference": "67170bfe69037dda4bc3026498e1c4c6e415c13f"
+                "reference": "26066ef0289ed7e68e35fb4a8a926ab935a9a9cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-cmsadmin/zipball/67170bfe69037dda4bc3026498e1c4c6e415c13f",
-                "reference": "67170bfe69037dda4bc3026498e1c4c6e415c13f",
+                "url": "https://api.github.com/repos/luyadev/luya-module-cmsadmin/zipball/26066ef0289ed7e68e35fb4a8a926ab935a9a9cc",
+                "reference": "26066ef0289ed7e68e35fb4a8a926ab935a9a9cc",
                 "shasum": ""
             },
             "type": "luya-module",
@@ -725,7 +673,7 @@
                     "homepage": "https://github.com/nadar"
                 }
             ],
-            "description": "Yii2 LUYA CMS Admin-Module",
+            "description": "Content manager administration module",
             "homepage": "http://luya.io",
             "keywords": [
                 "cms",
@@ -738,64 +686,7 @@
                 "yii2-cms",
                 "yii2-cmsadmin"
             ],
-            "time": "2016-05-26 08:49:20"
-        },
-        {
-            "name": "luyadev/luya-module-exporter",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/luyadev/luya-module-exporter.git",
-                "reference": "7f494443c9f8fbf1fd0ad7e0b166583f6d41d0e9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-exporter/zipball/7f494443c9f8fbf1fd0ad7e0b166583f6d41d0e9",
-                "reference": "7f494443c9f8fbf1fd0ad7e0b166583f6d41d0e9",
-                "shasum": ""
-            },
-            "require": {
-                "ifsnop/mysqldump-php": "2.*"
-            },
-            "type": "luya-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "exporter\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Basil",
-                    "email": "git@nadar.io",
-                    "homepage": "https://github.com/nadar"
-                }
-            ],
-            "description": "Yii2 LUYA Exporter Module",
-            "homepage": "http://luya.io",
-            "keywords": [
-                "dev",
-                "download",
-                "export",
-                "luya",
-                "luya-module",
-                "module",
-                "php",
-                "preproduction",
-                "sql",
-                "storage",
-                "yii",
-                "yii2"
-            ],
-            "time": "2016-06-01 08:40:01"
+            "time": "2016-06-17 12:15:58"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1058,54 +949,6 @@
                 "yii2"
             ],
             "time": "2016-02-06 00:49:24"
-        },
-        {
-            "name": "yiisoft/yii2-imagine",
-            "version": "2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-imagine.git",
-                "reference": "0961343138b65bba447de84b2b300899617e6acc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-imagine/zipball/0961343138b65bba447de84b2b300899617e6acc",
-                "reference": "0961343138b65bba447de84b2b300899617e6acc",
-                "shasum": ""
-            },
-            "require": {
-                "imagine/imagine": "0.5.*",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\imagine\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Antonio Ramirez",
-                    "email": "amigo.cobos@gmail.com"
-                }
-            ],
-            "description": "The Imagine integration for the Yii framework",
-            "keywords": [
-                "helper",
-                "image",
-                "imagine",
-                "yii2"
-            ],
-            "time": "2015-03-01 06:22:44"
         }
     ],
     "packages-dev": [
@@ -1685,12 +1528,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/luyadev/luya-deployer.git",
-                "reference": "150b9d362407f347ce41552f238e5b7138f6a29b"
+                "reference": "73acf5d444fe98d318c398ab50dff5e1089296b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-deployer/zipball/150b9d362407f347ce41552f238e5b7138f6a29b",
-                "reference": "150b9d362407f347ce41552f238e5b7138f6a29b",
+                "url": "https://api.github.com/repos/luyadev/luya-deployer/zipball/73acf5d444fe98d318c398ab50dff5e1089296b0",
+                "reference": "73acf5d444fe98d318c398ab50dff5e1089296b0",
                 "shasum": ""
             },
             "require": {
@@ -1713,7 +1556,7 @@
                     "homepage": "https://github.com/nadar"
                 }
             ],
-            "description": "LUYA deployer recipe",
+            "description": "This is the LUYA recipe to deploy with Deployer, the Deployment Tool for PHP.",
             "homepage": "http://luya.io",
             "keywords": [
                 "deployer",
@@ -1722,7 +1565,7 @@
                 "php",
                 "yii2"
             ],
-            "time": "2016-06-01 08:40:50"
+            "time": "2016-06-16 11:21:17"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -2465,16 +2308,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "f62db5b8afec27073a4609b8c84b1f9936652259"
+                "reference": "64a4d43b045f07055bb197650159769604cb2a92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/f62db5b8afec27073a4609b8c84b1f9936652259",
-                "reference": "f62db5b8afec27073a4609b8c84b1f9936652259",
+                "url": "https://api.github.com/repos/symfony/console/zipball/64a4d43b045f07055bb197650159769604cb2a92",
+                "reference": "64a4d43b045f07055bb197650159769604cb2a92",
                 "shasum": ""
             },
             "require": {
@@ -2521,20 +2364,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-30 06:58:39"
+            "time": "2016-06-14 11:18:07"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "c9ed5a44dbc783a352f06b20440863c7463de907"
+                "reference": "26786e21ee0344f99629215ead5f0d6f18cdc267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/c9ed5a44dbc783a352f06b20440863c7463de907",
-                "reference": "c9ed5a44dbc783a352f06b20440863c7463de907",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/26786e21ee0344f99629215ead5f0d6f18cdc267",
+                "reference": "26786e21ee0344f99629215ead5f0d6f18cdc267",
                 "shasum": ""
             },
             "require": {
@@ -2578,11 +2421,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-24 10:06:56"
+            "time": "2016-06-06 15:08:54"
         },
         {
             "name": "symfony/expression-language",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/expression-language.git",
@@ -2631,7 +2474,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2739,16 +2582,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1574f3451b40fa9bbae518ef71d19a56f409cac0"
+                "reference": "6350e63ed9c232da50e00f00a7e0330f066387a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1574f3451b40fa9bbae518ef71d19a56f409cac0",
-                "reference": "1574f3451b40fa9bbae518ef71d19a56f409cac0",
+                "url": "https://api.github.com/repos/symfony/process/zipball/6350e63ed9c232da50e00f00a7e0330f066387a2",
+                "reference": "6350e63ed9c232da50e00f00a7e0330f066387a2",
                 "shasum": ""
             },
             "require": {
@@ -2784,20 +2627,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2016-04-12 19:11:33"
+            "time": "2016-06-06 11:42:41"
         },
         {
             "name": "symfony/yaml",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a"
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
-                "reference": "eca51b7b65eb9be6af88ad7cc91685f1556f5c9a",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/c5a7e7fc273c758b92b85dcb9c46149ccda89623",
+                "reference": "c5a7e7fc273c758b92b85dcb9c46149ccda89623",
                 "shasum": ""
             },
             "require": {
@@ -2833,7 +2676,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2016-05-26 21:46:24"
+            "time": "2016-06-14 11:18:07"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -2989,11 +2832,10 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "luyadev/luya-core": 20,
-        "luyadev/luya-module-admin": 20,
-        "luyadev/luya-module-cms": 20,
-        "luyadev/luya-module-cmsadmin": 20,
-        "luyadev/luya-module-exporter": 20,
+        "luyadev/luya-core": 10,
+        "luyadev/luya-module-admin": 10,
+        "luyadev/luya-module-cms": 10,
+        "luyadev/luya-module-cmsadmin": 10,
         "luyadev/luya-bootstrap4": 20,
         "luyadev/luya-deployer": 20
     },
