@@ -24,3 +24,18 @@ We have created our own NPM Package that includes our gulp workflow.
 Inside the `resources/` folder, everything is prepared.
 
 See [zephir/zephir-gulp-workflow](https://github.com/zephir/zephir-gulp-workflow) for a full documentation of the workflow.
+
+# Backend
+
+### Assets
+
+To speed up your local development you can uncomment the following lines in `configs/local.php`.
+```
+'assetManager' => [
+    'class' => 'luya\web\AssetManager',
+    'linkAssets' => true,
+],
+```
+
+Now all assets will be symlinked and not copied.
+> This will also enable CSS instant reload provided by `browserSync` (gulp).
