@@ -121,6 +121,16 @@ $config = [
             'class' => 'yii\caching\DummyCache', // use: yii\caching\FileCache
         ],
 
+        /*
+         * Enable symlinking for assets. This also enables the CSS Injection by browserSync (gulp).
+         * 
+         * http://www.yiiframework.com/doc-2.0/yii-web-assetmanager.html
+         */
+        /*'assetManager' => [
+            'class' => 'luya\web\AssetManager',
+            'linkAssets' => true,
+        ],*/
+
         'i18n' => [
             'translations' => [
                 'app*' => [
