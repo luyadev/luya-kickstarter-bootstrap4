@@ -4,10 +4,10 @@
     "type": "project",
     "license":"MIT",
     "require": {
-        "luyadev/luya-core" : "1.0.0-beta7",
-        "luyadev/luya-module-admin" : "1.0.0-beta7",
-        "luyadev/luya-module-cms" : "1.0.0-beta7",
-        "luyadev/luya-module-cmsadmin" : "1.0.0-beta7",
+        "luyadev/luya-core" : "1.0.0-beta8",
+        "luyadev/luya-module-admin" : "1.0.0-beta8",
+        "luyadev/luya-module-cms" : "1.0.0-beta8",
+        "luyadev/luya-module-cmsadmin" : "1.0.0-beta8",
         "luyadev/luya-bootstrap4": "^1.0@dev"
     },
     "require-dev": {
@@ -34,6 +34,7 @@
         },
         "branch-alias": {
             "dev-master": "1.0.x-dev"
-        }
+        },
+        "asset-pattern-skip-version": "(-build|-patch)"
     }
 }
