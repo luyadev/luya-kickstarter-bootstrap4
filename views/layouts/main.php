@@ -1,4 +1,11 @@
-<?php $this->beginPage(); ?>
+<?php 
+
+use app\assets\ResourcesAsset;
+
+ResourcesAsset::register($this);
+
+$this->beginPage();
+?>
 <html>
     <head>
         <meta charset="utf-8">
