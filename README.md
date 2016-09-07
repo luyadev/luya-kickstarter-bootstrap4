@@ -1,15 +1,14 @@
-LUYA BOOTSTRAP4 BOILERPLATE
-=======================
+# LUYA BOOTSTRAP4 BOILERPLATE
 
-# Installation
+## Installation
 
-```
+```sh
 composer create-project luyadev/luya-boilerplate-bootstrap4:^1.0@dev
 ```
 
 > This will install the current dev-master of LUYA and its modules.
 
-# Front-End
+## Front-End
 
 ### Libraries
 
@@ -29,8 +28,9 @@ See [zephir/zephir-gulp-workflow](https://github.com/zephir/zephir-gulp-workflow
 
 ### Assets
 
-To speed up your local development you can uncomment the following lines in `configs/local.php`.
-```
+To speed up your local development you can uncomment the following lines in `configs/local.php` in order to use symlinking your assets instead of copy them every run.
+
+```php
 'assetManager' => [
     'class' => 'luya\web\AssetManager',
     'linkAssets' => true,
@@ -38,4 +38,5 @@ To speed up your local development you can uncomment the following lines in `con
 ```
 
 Now all assets will be symlinked and not copied.
+
 > This will also enable CSS instant reload provided by `browserSync` (gulp).
