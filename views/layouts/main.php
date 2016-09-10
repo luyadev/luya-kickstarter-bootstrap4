@@ -6,18 +6,14 @@ ResourcesAsset::register($this);
 
 $this->beginPage();
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="<?= Yii::$app->composition->language; ?>">
     <head>
+        <title><?= $this->title; ?></title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-        <title>Luya &mdash; <?= $this->title; ?></title>
-
-        <meta name="description" content="">
-        <meta name="author" content="">
-
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="author" content="luya.io">
         <?php $this->head() ?>
     </head>
     <body>
