@@ -155,4 +155,4 @@ $config = [
 }*/
 
 
-return \yii\helpers\ArrayHelper::merge($config, require('localdb.php'));
+return \yii\helpers\ArrayHelper::merge($config, require('env-local-db.php'));
