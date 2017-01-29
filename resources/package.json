@@ -8,6 +8,6 @@
   "devDependencies": {},
   "dependencies": {
     "gulp": "^3.9.1",
-    "zephir-gulp-workflow": "0.0.8"
+    "zephir-gulp-workflow": "^1.0.0"
   }
 }
