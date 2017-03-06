@@ -10,6 +10,11 @@ composer create-project luyadev/luya-boilerplate-bootstrap4:^1.0@dev
 
 ## Front-End
 
+### Browser support
+
+As of bootstrap `v4 alpha 6`, the grid is completely written in FLEX.  
+Check the [Browser Support](http://caniuse.com/#search=flex) to decide if you want to use Bootstrap for your Project.
+
 ### Libraries
 
 These libraries are included and avaible.

@@ -2,7 +2,9 @@
     margin: 50px 0;
 
     div[class^=col-] {
-        background-color: $alert-info-bg;
-        border: 1px solid $alert-info-border;
+        display: block;
+        background-color: #ff9058;
+        border: 1px solid darken(#ff9058, 10);
+        color: $white;
     }
 }

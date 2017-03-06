@@ -1,66 +1,21 @@
 // ==================================================
-// BOOTSTRAP
-// Core variables and mixins
-@import "bootstrap-4-alpha4/variables";
-@import "bootstrap-4-alpha4/mixins";
-
-// ==================================================
-// PROJECT
+// VARIABLES
 // Overwrites the default bootstrap variables
 // and adds new ones
+
 @import "base/variables";
 
 // ==================================================
 // BOOTSTRAP
-// Core variables and mixins
-@import "bootstrap-4-alpha4/normalize";
-@import "bootstrap-4-alpha4/print";
 
-// ==================================================
-// BOOTSTRAP
-// Core CSS
-@import "bootstrap-4-alpha4/reboot";
-@import "bootstrap-4-alpha4/type";
-@import "bootstrap-4-alpha4/images";
-@import "bootstrap-4-alpha4/code";
-@import "bootstrap-4-alpha4/grid";
-@import "bootstrap-4-alpha4/tables";
-@import "bootstrap-4-alpha4/forms";
-@import "bootstrap-4-alpha4/buttons";
+// Import whole bootstrap project
+@import "bootstrap-4-alpha4/bootstrap";
 
-// ==================================================
-// BOOTSTRAP
-// Components
-@import "bootstrap-4-alpha4/animation";
-@import "bootstrap-4-alpha4/dropdown";
-@import "bootstrap-4-alpha4/button-group";
-@import "bootstrap-4-alpha4/input-group";
-@import "bootstrap-4-alpha4/custom-forms";
-@import "bootstrap-4-alpha4/nav";
-@import "bootstrap-4-alpha4/navbar";
-@import "bootstrap-4-alpha4/card";
-@import "bootstrap-4-alpha4/breadcrumb";
-@import "bootstrap-4-alpha4/pagination";
-@import "bootstrap-4-alpha4/jumbotron";
-@import "bootstrap-4-alpha4/alert";
-@import "bootstrap-4-alpha4/progress";
-@import "bootstrap-4-alpha4/media";
-@import "bootstrap-4-alpha4/list-group";
-@import "bootstrap-4-alpha4/responsive-embed";
-@import "bootstrap-4-alpha4/close";
+// Import bootstrap grid
+// @import "bootstrap-4-alpha4/bootstrap-grid";
 
-// ==================================================
-// BOOTSTRAP
-// Components w/ JavaScript
-@import "bootstrap-4-alpha4/modal";
-@import "bootstrap-4-alpha4/tooltip";
-@import "bootstrap-4-alpha4/popover";
-@import "bootstrap-4-alpha4/carousel";
-
-// ==================================================
-// BOOTSTRAP
-// Utility classes
-@import "bootstrap-4-alpha4/utilities";
+// Import bootstrap reboot
+// @import "bootstrap-4-alpha4/bootstrap-reboot";
 
 // ==================================================
 // PROJECT
