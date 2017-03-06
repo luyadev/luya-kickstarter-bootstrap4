@@ -1,9 +1,9 @@
-# LUYA BOOTSTRAP4 BOILERPLATE
+# LUYA BOOTSTRAP 4 KICKSTARTER
 
 ## Installation
 
 ```sh
-composer create-project luyadev/luya-boilerplate-bootstrap4:^1.0@dev
+composer create-project luyadev/luya-kickstarter-bootstrap4:^1.0@dev
 ```
 
 > This will install the current dev-master of LUYA and its modules.
