@@ -36,6 +36,11 @@ $config = [
      */
     'basePath' => dirname(__DIR__),
     
+    /*
+     * Admin interface default language. Currently supported: "en", "de", "fr", "es", "ru", "it", "ua", "el".
+     */
+    'luyaLanguage' => 'en',
+    
     'modules' => [
 
         /*
@@ -49,7 +54,7 @@ $config = [
         'admin' => [
             'class' => 'luya\admin\Module',
             'secureLogin' => false, // when enabling secure login, the mail component must be proper configured otherwise the auth token mail will not send.
-            'interfaceLanguage' => 'en', // Admin interface default language. Currently supported: "en", "de", "fr", "es", "ru", "it", "ua", "el".
+            //'interfaceLanguage' => 'en', // Admin interface default language. Currently supported: "en", "de", "fr", "es", "ru", "it", "ua", "el".
         ],
         
         /*

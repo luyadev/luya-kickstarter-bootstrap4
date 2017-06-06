@@ -3,10 +3,8 @@
 ## Installation
 
 ```sh
-composer create-project luyadev/luya-kickstarter-bootstrap4:^1.0@dev
+composer create-project luyadev/luya-kickstarter-bootstrap4:1.0.0-RC3
 ```
-
-> This will install the current dev-master of LUYA and its modules.
 
 ## Front-End
 
