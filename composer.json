@@ -12,7 +12,8 @@
     "require-dev": {
         "yiisoft/yii2-debug" : "~2.0.0",
         "yiisoft/yii2-gii" : "~2.0.0",
-        "luyadev/luya-deployer": "~1.0.0"
+        "luyadev/luya-deployer": "~1.0.0",
+        "twbs/bootstrap": "4.0.0-beta"
     },
     "scripts": {
         "post-create-project-cmd": [

@@ -3,22 +3,23 @@
 // Overwrites the default bootstrap variables
 // and adds new ones
 
+@import "base/base";
 @import "base/variables";
 
 // ==================================================
 // BOOTSTRAP
 
 // Import whole bootstrap project
-@import "bootstrap-4-alpha4/bootstrap";
+@import "../../vendor/twbs/bootstrap/scss/bootstrap";
 
 // Import bootstrap grid
-// @import "bootstrap-4-alpha4/bootstrap-grid";
+// @import "../../vendor/twbs/bootstrap/scss/bootstrap-grid";
 
 // Import bootstrap reboot
-// @import "bootstrap-4-alpha4/bootstrap-reboot";
+// @import "../../vendor/twbs/bootstrap/scss/bootstrap-reboot";
 
 // ==================================================
 // PROJECT
 // Components
 
-@import "components/example";
+@import "components/custom-example";

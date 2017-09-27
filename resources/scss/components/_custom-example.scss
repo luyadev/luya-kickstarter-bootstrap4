@@ -1,0 +1,18 @@
+.custom-example {
+    display: block;
+    margin: 25px 25px 0;
+
+    @include media-breakpoint-up(md) {
+        left: 50%;
+        max-width: 780px;
+        position: absolute;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 100%;
+        margin: 0 25px;
+    }
+
+    .display-3 {
+        word-wrap: break-word;
+    }
+}
