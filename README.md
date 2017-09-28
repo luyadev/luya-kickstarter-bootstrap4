@@ -1,5 +1,7 @@
 # LUYA BOOTSTRAP 4 KICKSTARTER
 
+> **Attention:** As of Bootstrap 4, the grid is completely written in FLEX. Check the [Browser Support](http://caniuse.com/#search=flex) to decide if you want to use Bootstrap 4 for your Project.
+
 ## Installation
 
 ```sh
@@ -7,11 +9,6 @@ composer create-project luyadev/luya-kickstarter-bootstrap4:1.0.0-RC3
 ```
 
 ## Front-End
-
-### Browser support
-
-As of bootstrap `v4 alpha 6`, the grid is completely written in FLEX.  
-Check the [Browser Support](http://caniuse.com/#search=flex) to decide if you want to use Bootstrap for your Project.
 
 ### Libraries
 
@@ -29,7 +26,7 @@ Everything is prepared inside the `resources/` folder.
 
 See [zephir/zephir-gulp-workflow](https://github.com/zephir/zephir-gulp-workflow) for a full documentation of the workflow.
 
-# Backend
+## Backend
 
 ### Assets
 
