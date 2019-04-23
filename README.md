@@ -14,7 +14,7 @@
 ## Installation
 
 ```sh
-composer create-project luyadev/luya-kickstarter-bootstrap4:~1.0.0
+composer create-project luyadev/luya-kickstarter-bootstrap4
 ```
 
 ## Front-End
