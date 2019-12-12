@@ -10,31 +10,21 @@
         "luyadev/luya-bootstrap4": "^1.0"
     },
     "require-dev": {
-        "yiisoft/yii2-debug" : "~2.0.0",
-        "yiisoft/yii2-gii" : "~2.0.0",
-        "luyadev/luya-deployer": "~1.0.0",
-        "twbs/bootstrap": "~4.0.0"
+        "yiisoft/yii2-debug" : "^2.0",
+        "yiisoft/yii2-gii" : "^2.0",
+        "luyadev/luya-deployer": "^1.0",
+        "twbs/bootstrap": "^4.0"
     },
-    "scripts": {
-        "post-create-project-cmd": [
-            "yii\\composer\\Installer::postCreateProject"
-        ]
+
+    "config": {
+        "fxp-asset": {
+            "enabled": false
+        }
     },
-    "extra": {
-        "yii\\composer\\Installer::postCreateProject": {
-			"setPermission": [
-				{
-				    "public_html/assets": "0777",
-					"public_html/storage": "0777"
-				}
-			]
-		},
-        "asset-installer-paths": {
-            "bower-asset-library": "vendor/bower"
-        },
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
-        },
-        "asset-pattern-skip-version": "(-build|-patch)"
-    }
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
