@@ -4,7 +4,7 @@
     "type": "luya-kickstarter",
     "license":"MIT",
     "require": {
-        "luyadev/luya-module-admin" : "^4.0",
+        "luyadev/luya-module-admin" : "dev-master as 4.2.0",
         "luyadev/luya-module-cms" : "^4.0",
         "luyadev/luya-bootstrap4": "^1.0",
         "luyadev/luya-generic" : "^1.0"
