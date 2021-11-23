@@ -10,6 +10,15 @@ $config = new Config('myproject', dirname(__DIR__), [
         '@npm'   => '@vendor/npm-asset',
     ],
     'modules' => [
+        // Admin module for the `cms` module.
+        'cmsadmin' => [
+            'class' => 'luya\cms\admin\Module',
+        ],
+        // Frontend module for the `cms` module.
+        'cms' => [
+            'class' => 'luya\cms\frontend\Module',
+            'contentCompression' => true, // compressing the cms output (removing white spaces and newlines)
+        ],
         /*
          * If you have other admin modules (e.g. cmsadmin) then you going to need the admin. The Admin module provides
          * a lot of functionality, like storage, user, permission, crud, etc.
@@ -20,15 +29,6 @@ $config = new Config('myproject', dirname(__DIR__), [
             'strongPasswordPolicy' => false, // If enabled, the admin user passwords require strength input with special chars, lower, upper, digits and numbers
             'interfaceLanguage' => 'en', // Admin interface default language. Currently supported: en, de, ru, es, fr, ua, it, el, vi, pt, fa
             'autoBootstrapQueue' => true, // Enables the fake cronjob by default, read more about queue/scheduler: https://luya.io/guide/app-queue
-        ],
-        // Frontend module for the `cms` module.
-        'cms' => [
-            'class' => 'luya\cms\frontend\Module',
-            'contentCompression' => true, // compressing the cms output (removing white spaces and newlines)
-        ],
-        // Admin module for the `cms` module.
-        'cmsadmin' => [
-            'class' => 'luya\cms\admin\Module',
         ],
     ],
     'components' => [
