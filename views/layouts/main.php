@@ -3,7 +3,8 @@
 use app\assets\ResourcesAsset;
 
 ResourcesAsset::register($this);
-
+/** @var luya\web\View $this */
+/** @var string $content */
 $this->beginPage();
 ?>
 <!DOCTYPE html>
