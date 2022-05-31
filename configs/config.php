@@ -104,6 +104,10 @@ $config->component('cache', [
     'class' => 'yii\caching\FileCache'
 ])->env(Config::ENV_PROD);
 
+$config->application([
+    'ensureSecureConnection' => true, // https://luya.io/guide/app-security
+])->env(Config::ENV_PROD);
+
 // debug and gii on local env
 $config->module('debug', [
     'class' => 'yii\debug\Module',
