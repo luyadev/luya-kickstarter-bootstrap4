@@ -5,10 +5,6 @@ services:
     volumes:
       - ./:/app
     command: composer install
-  luya_php:
-    image: luyadev/luya-docker-php
-    volumes:
-      - ./:/app
   luya_db:
     image: mysql:5.7
     command:
@@ -20,8 +16,6 @@ services:
       MYSQL_USER: luya
       MYSQL_PASSWORD: luya
   luya_web:
-    image: luyadev/luya-docker-nginx
-    ports:
-      - "8080:80"
+    image: luyadev/luya-docker:nginx-fpm-php74
     volumes:
       - ./:/app
