@@ -10,7 +10,7 @@
 
 [LUYA](https://github.com/luyadev/luya) is a [Yii 2 PHP Framework](https://github.com/yiisoft/yii2) wrapper which provides out of the box functions like an **administration interface**, a beautiful looking **content management system**, **payment** modules, **agency workflows** and other tools to develop your website pretty fast!
 
-> **Attention:** As of Bootstrap 4, the grid is completely written in FLEX. Check the [Browser Support](http://caniuse.com/#search=flex) to decide if you want to use Bootstrap 4 for your Project.
+> **Attention:** As of Bootstrap 4, the grid is completely written in FLEX. Check the [Browser Support](https://caniuse.com/#search=flex) to decide if you want to use Bootstrap 4 for your Project.
 
 ## Installation
 
@@ -32,8 +32,8 @@ composer create-project luyadev/luya-kickstarter-bootstrap4
 
 These libraries are included and available:
 
-[» jQuery (yii\web\JqueryAsset)](http://www.yiiframework.com/doc-2.0/yii-web-jqueryasset.html)  
-[» Bootstrap v4 (CSS & JS)](http://getbootstrap.com/)
+[» jQuery (yii\web\JqueryAsset)](https://www.yiiframework.com/doc-2.0/yii-web-jqueryasset.html)  
+[» Bootstrap v4 (CSS & JS)](https://getbootstrap.com/)
 
 > Bootstrap is included as a composer requirement
 
