@@ -2590,16 +2590,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "2.0.32",
+            "version": "2.0.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "f5c4c19880d45d0be3e7d24ae8ac434844a898cd"
+                "reference": "b7d7d90ee7df7f33a664b4aea32d50a305d35adb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/f5c4c19880d45d0be3e7d24ae8ac434844a898cd",
-                "reference": "f5c4c19880d45d0be3e7d24ae8ac434844a898cd",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/b7d7d90ee7df7f33a664b4aea32d50a305d35adb",
+                "reference": "b7d7d90ee7df7f33a664b4aea32d50a305d35adb",
                 "shasum": ""
             },
             "require": {
@@ -2614,7 +2614,8 @@
                 "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
                 "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
                 "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
-                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
+                "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations.",
+                "ext-xml": "Install the XML extension to load XML formatted public keys."
             },
             "type": "library",
             "autoload": {
@@ -2679,7 +2680,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/2.0.32"
+                "source": "https://github.com/phpseclib/phpseclib/tree/2.0.47"
             },
             "funding": [
                 {
@@ -2695,7 +2696,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-12T12:12:59+00:00"
+            "time": "2024-02-26T04:55:38+00:00"
         },
         {
             "name": "phpspec/php-diff",
@@ -4782,5 +4783,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
