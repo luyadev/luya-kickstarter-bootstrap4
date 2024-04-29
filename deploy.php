@@ -1,26 +1,14 @@
 <?php
 
+namespace Deployer;
+
 require 'vendor/luyadev/luya-deployer/luya.php';
 
-// DEV environment
-server('dev', 'server.tld', 22)
-    ->user('username')
-    ->password('password')
-    ->stage('dev')
-    ->env('deploy_path', '/path/to/dev/project/public_html');
+host('SSH_HOST')
+    ->setLabels(['stage' => 'prod'])
+    ->set('remote_user', 'SSH_USER_NAME')
+    ->set('deploy_path', '~/httpdocs');
 
-// Preproduction environment
-server('prep', 'server.tld', 22)
-    ->user('username')
-    ->password('password')
-    ->stage('prep')
-    ->env('deploy_path', '/path/to/prep/project/public_html');
+after('luya:commands', 'unglue');
 
-// Production environment
-server('prod', 'server.tld', 22)
-    ->user('username')
-    ->password('password')
-    ->stage('prod')
-    ->env('deploy_path', '/path/to/prod/project/public_html');
-
-set('repository', 'https://user:password@github.com/organisation/repository.git');
+set('repository', 'https://USER:PASSWORD@github.com/VENDOR/REPO.git');

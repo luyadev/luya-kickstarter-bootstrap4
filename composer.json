@@ -4,20 +4,20 @@
     "type": "luya-kickstarter",
     "license":"MIT",
     "require": {
-        "luyadev/luya-module-admin" : "^4.0",
-        "luyadev/luya-module-cms" : "^4.0",
+        "luyadev/luya-module-admin" : "^5.0",
+        "luyadev/luya-module-cms" : "^5.0",
         "luyadev/luya-bootstrap4": "^1.0",
         "luyadev/luya-generic" : "^1.0"
     },
     "require-dev": {
         "yiisoft/yii2-debug" : "^2.0",
         "yiisoft/yii2-gii" : "^2.0",
-        "luyadev/luya-deployer": "^1.0",
+        "luyadev/luya-deployer": "^3.0",
         "twbs/bootstrap": "^4.0"
     },
     "config": {
-        "fxp-asset": {
-            "enabled": false
+        "platform": {
+            "php": "8.2"
         },
         "allow-plugins": {
             "yiisoft/yii2-composer": true,

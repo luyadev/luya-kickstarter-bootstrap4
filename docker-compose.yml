@@ -1,10 +1,12 @@
 version: '3'
 services:
+
   luya_composer:
-    image: composer:latest
+    image: composer
     volumes:
       - ./:/app
     command: composer install
+
   luya_db:
     image: mysql:5.7
     command:
@@ -12,10 +14,16 @@ services:
       - --collation-server=utf8_general_ci
     environment:
       MYSQL_ROOT_PASSWORD: luya
-      MYSQL_DATABASE: luya_core
+      MYSQL_DATABASE: luya
       MYSQL_USER: luya
       MYSQL_PASSWORD: luya
+    ports:
+      - "3306:3306"
+
   luya_web:
-    image: luyadev/luya-docker:nginx-fpm-php74
+    image: registry.gitlab.com/zephir.ch/foss/luya-docker:php82
     volumes:
-      - ./:/app
+      - ./localphp.ini:/etc/php82/conf.d/zzz_custom.ini
+      - ./:/var/www/html
+    healthcheck:
+      disable: true

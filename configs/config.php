@@ -69,55 +69,57 @@ $config = new Config('myproject', dirname(__DIR__), [
     ]
 ]);
 
-$config->callback(function() {
-    define('YII_DEBUG', true);
-    define('YII_ENV', 'local');
-})->env(Config::ENV_LOCAL);
+/************ LOCAL ************/
 
-// database config for 
-$config->component('db', [
-    'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
-    // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock', // OSX MAMP
-    // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock', // OSX XAMPP
-    'username' => '',
-    'password' => '',
-])->env(Config::ENV_LOCAL);
+$config->env(Config::ENV_LOCAL, function (Config $config) {
+    $config->callback(function () {
+        define('YII_DEBUG', true);
+        define('YII_ENV', 'local');
+    });
 
-/*
-// docker mysql config
-$config->component('db', [
-    'dsn' => 'mysql:host=luya_db;dbname=luya_kickstarter_101',
-    'username' => 'luya',
-    'password' => 'CHANGE_ME',
-])->env(Config::ENV_LOCAL);
-*/
+    // docker mysql config
+    $config->component('db', [
+        'dsn' => 'mysql:host=luya_db;dbname=luya',
+        'username' => 'luya',
+        'password' => 'luya',
+    ]);
+    
+    $config->component('assetManager', [
+        'class' => 'luya\web\AssetManager',
+        'linkAssets' => true
+    ]);
+    
+    // debug and gii on local env
+    $config->module('debug', [
+        'class' => 'yii\debug\Module',
+        'allowedIPs' => ['*'],
+    ]);
+    $config->module('gii', [
+        'class' => 'yii\gii\Module',
+        'allowedIPs' => ['*'],
+    ]);
 
-$config->component('db', [
-    'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
-    'username' => '',
-    'password' => '',
-    'enableSchemaCache' => true,
-    'schemaCacheDuration' => 0,
-])->env(Config::ENV_PROD);
+    $config->bootstrap(['debug', 'gii']);
+});
 
-$config->component('cache', [
-    'class' => 'yii\caching\FileCache'
-])->env(Config::ENV_PROD);
+/************ PROD ************/
 
-$config->application([
-    'ensureSecureConnection' => true, // https://luya.io/guide/app-security
-])->env(Config::ENV_PROD);
+$config->env(Config::ENV_PROD, function (Config $config) {
+    $config->component('db', [
+        'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
+        'username' => '',
+        'password' => '',
+        'enableSchemaCache' => true,
+        'schemaCacheDuration' => 0,
+    ]);
 
-// debug and gii on local env
-$config->module('debug', [
-    'class' => 'yii\debug\Module',
-    'allowedIPs' => ['*'],
-])->env(Config::ENV_LOCAL);
-$config->module('gii', [
-    'class' => 'yii\gii\Module',
-    'allowedIPs' => ['*'],
-])->env(Config::ENV_LOCAL);
-
-$config->bootstrap(['debug', 'gii'])->env(Config::ENV_LOCAL);
+    $config->component('cache', [
+        'class' => 'yii\caching\FileCache'
+    ]);
+    
+    $config->application([
+        'ensureSecureConnection' => true, // https://luya.io/guide/app-security
+    ]);
+});
 
 return $config;
